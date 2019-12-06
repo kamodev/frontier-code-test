@@ -1,0 +1,31 @@
+<main class="content grid" id="home-content">
+    <div class="content-title-container">
+        <h2>Accounts</h2>
+    </div>
+    <section class="grid" id="account-grid">
+        <section class="account-column grid" id="active-account-column">
+            <div class="account-container-title" id="active-account-container-title">
+                <h3>Active</h3>
+            </div>
+            <div class="account-container active-account">
+                <app-account-list status="0"></app-account-list>
+            </div>     
+        </section>
+        <section class="account-column grid" id="overdue-account-column">
+            <div class="account-container-title" id="overdue-account-container-title">
+                <h3>Overdue</h3>
+            </div>
+            <div class="account-container overdue-account">
+                <app-account-list status="1"></app-account-list>
+            </div>
+        </section>
+        <section class="account-column grid" id="inactive-account-column">
+            <div class="account-container-title" id="inactive-account-container-title">
+                <h3>Inactive</h3>
+            </div>
+            <div class="account-container inactive-account">
+                <app-account-list status="2"></app-account-list>
+            </div>
+        </section>
+    </section>
+</main>
